@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Film Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="./casette.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="button-container">
+            <button id="micButton" class="mic-button">🔍</button>
+            <button id="ttsButton" class="mic-button">🎭</button>
+            <button id="timelineButton" class="mic-button">🎬</button>
+        </div>
+        <div id="status" class="status"></div>
+        <div id="results" class="results">
+            <div id="transcription" class="transcription"></div>
+            <div id="soundResults" class="sound-results"></div>
+        </div>
+
+        <div id="libraryContent" class="library-content">
+            <!-- Sound clips will be added here -->
+        </div>
+
+        <div id="timelineSection" class="timeline-section">
+            <div class="timeline-controls">
+                <button id="playButton">▶️</button>
+                <button id="stopButton">⏹️</button>
+                <button id="saveButton">💾</button>
+                <button id="exportButton">📤</button>
+                <button id="addTrackButton">➕</button>
+                <div class="time-display">00:00</div>
+            </div>
+            <div id="timeline" class="timeline">
+                <!-- Timeline tracks will be added here -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
